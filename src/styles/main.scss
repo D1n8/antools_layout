@@ -1,0 +1,245 @@
+$text-color-main: rgba(255, 255, 255, 0.9);
+$text-color-minor: rgba(255, 255, 255, 0.55);
+$orange: rgba(255, 110, 48, 1);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 25px 0 50px;
+    background-color: rgba(30, 37, 43, 1);
+}
+
+.list{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn{
+    padding: 12px 28px;
+    border-radius: 8px;
+    border: 0;
+    background-color: $orange;
+    font-size: 16px;
+    font-weight: 600;
+    color: $text-color-main;
+}
+
+.btn_transparent{
+    background-color: transparent;
+    color: $text-color-minor;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-inline: 108px;
+
+    .nav__list{
+        display: flex;
+        gap: 30px;
+
+        .nav__item-link{
+            color: $text-color-minor;
+        }
+    }
+}
+
+main{
+    margin-block: 105px 200px;
+}
+
+.hero{
+    background: right / contain no-repeat url('../images/Illustration.png');
+    margin-left: 108px;
+
+    &__container{
+        max-width: 600px;
+    }
+    
+    &__textbox{
+        margin-bottom: 110px;
+    }
+
+    &__title{
+        margin-bottom: 30px;
+        font-size: 50px;
+        font-weight: 500;
+        line-height: 1.4;
+        color: $text-color-main;
+    }
+
+    &__descr{
+        margin-bottom: 60px;
+        font-size: 18px;
+        line-height: 1.66;            
+        color: $text-color-minor;
+    }
+
+    &__input{
+        display: flex;
+        align-items: center;
+        max-width: 500px;
+        padding: 8px;
+        justify-content: space-between;
+        background-color: rgba(40, 48, 54, 1);
+        border: none;
+        border-radius: 15px;
+
+        .input-box{
+            display: flex;
+            gap: 5px;
+            margin-left: 10px;
+        }
+
+        input{
+            background: transparent;
+            border: none;
+            color: $text-color-main;
+        }
+
+        .input__field{
+            width: 300px;
+        }
+    }
+
+    &__social-links{
+        display: flex;
+        gap: 30px;
+    }
+}
+
+
+
+
+%center-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tools{
+    @extend %center-text;
+    margin: 200px 108px 0 108px;
+
+    &__btn{
+        padding: 17px 38px;
+        background-color: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        color: $orange;
+    }
+
+    &__list{
+        margin-bottom: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 24px;
+        row-gap: 100px;
+    }
+
+    .textbox{
+        @extend %center-text;
+        max-width: 455px;
+        gap: 25px;
+        margin-bottom: 90px;
+
+        &__title{
+            font-size: 48px;
+            font-weight: 500;
+            color: $text-color-main;
+        }
+    
+        &__descr{
+            text-align: center;
+            font-size: 18px;
+            font-weight: 500;
+            color: $text-color-minor;
+        }
+    }
+
+    .list-item{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 392px;
+        max-height: 294px;
+        padding: 33px;
+        border: 1px solid red;
+        border-radius: 15px;
+        
+        &__title{
+            margin-bottom: 3px;
+            font-size: 24px;
+            line-height: 1.5;
+            font-weight: 500;
+            color: $text-color-main;
+        }
+
+        &__subtitle{
+            font-size: 18px;
+            line-height: 1.5;
+            color: rgba(255, 165, 55, 0.55);
+        }
+        
+        &__descr{
+            line-height: 1,875;
+            color: $text-color-minor;
+        }
+
+        .top-container{
+            display: flex;
+            gap: 30px;
+        }
+
+        .bottom-container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}
+
+.footer{
+    margin: 0 108px 50px;
+    padding: 55px 82px;
+    border-radius: 25px;
+    border: 1px solid red;
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+        gap: 55px;
+    }
+
+    &__title{
+        text-align: center;
+        font-size: 24px;
+        line-height: 1.5;
+        font-weight: 500;
+        color: $text-color-main;
+    }
+
+    &__list{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+
+
+
+
+
+
+
+
+

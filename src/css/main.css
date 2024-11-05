@@ -5,6 +5,7 @@
 }
 
 body {
+  font-family: "Poppins", sans-serif;
   margin: 25px 0 50px;
   background-color: rgb(30, 37, 43);
 }
@@ -20,16 +21,26 @@ a {
 .btn {
   padding: 12px 28px;
   border-radius: 8px;
-  border: 0;
+  border: 1px solid rgb(255, 110, 48);
   background-color: rgb(255, 110, 48);
   font-size: 16px;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.9);
 }
 
+.btn:focus, .btn:hover, .btn:active {
+  border: 1px solid rgb(255, 110, 48);
+  background: transparent;
+}
+
 .btn_transparent {
+  border: 1px solid transparent;
   background-color: transparent;
   color: rgba(255, 255, 255, 0.55);
+}
+
+.btn_transparent:focus, .btn_transparent:hover, .btn_transparent:active {
+  color: rgba(255, 255, 255, 0.9);
 }
 
 header {
@@ -40,10 +51,25 @@ header {
 }
 header .nav__list {
   display: flex;
-  gap: 30px;
+  gap: 50px;
 }
 header .nav__list .nav__item-link {
   color: rgba(255, 255, 255, 0.55);
+}
+header .nav__list .select-svg {
+  stroke: rgba(255, 255, 255, 0.9);
+  stroke-opacity: 0.55;
+}
+header .nav__list .nav__item-link_select {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+header .nav__list .nav__item-link:focus, header .nav__list .nav__item-link:hover, header .nav__list .nav__item-link:active {
+  color: rgba(255, 255, 255, 0.9);
+}
+header .nav__list .nav__item-link:focus .select-svg, header .nav__list .nav__item-link:hover .select-svg, header .nav__list .nav__item-link:active .select-svg {
+  stroke-opacity: 1;
 }
 
 main {
@@ -100,6 +126,12 @@ main {
   display: flex;
   gap: 30px;
 }
+.hero__social-links .social-link-icon {
+  fill: white;
+}
+.hero__social-links .social-link-icon:focus, .hero__social-links .social-link-icon:hover, .hero__social-links .social-link-icon:active {
+  fill: rgb(255, 110, 48);
+}
 
 .tools .textbox, .tools {
   display: flex;
@@ -148,8 +180,9 @@ main {
   max-width: 392px;
   max-height: 294px;
   padding: 33px;
-  border: 1px solid red;
+  border: 1px solid transparent;
   border-radius: 15px;
+  transition: all 0.3s ease-in-out;
 }
 .tools .list-item__title {
   margin-bottom: 3px;
@@ -176,12 +209,39 @@ main {
   align-items: center;
   justify-content: space-between;
 }
+.tools .add-svg {
+  fill: "#1E252B";
+}
+.tools .bg-like {
+  fill: white;
+  fill-opacity: 0.38;
+}
+.tools .list-item:focus, .tools .list-item:hover, .tools .list-item:active {
+  background-color: rgba(40, 48, 54, 0.6);
+  transform: translateY(-20px);
+}
+.tools .list-item:focus .bg-svg, .tools .list-item:hover .bg-svg, .tools .list-item:active .bg-svg {
+  fill: rgb(40, 48, 54);
+}
+.tools .list-item:focus .btn_transparent, .tools .list-item:hover .btn_transparent, .tools .list-item:active .btn_transparent {
+  color: rgba(255, 255, 255, 0.9);
+  background-color: rgb(255, 110, 48);
+}
+.tools .list-item:focus .btn_transparent:focus, .tools .list-item:focus .btn_transparent:hover, .tools .list-item:focus .btn_transparent:active, .tools .list-item:hover .btn_transparent:focus, .tools .list-item:hover .btn_transparent:hover, .tools .list-item:hover .btn_transparent:active, .tools .list-item:active .btn_transparent:focus, .tools .list-item:active .btn_transparent:hover, .tools .list-item:active .btn_transparent:active {
+  border: 1px solid rgb(255, 110, 48);
+  background: transparent;
+}
+.tools .list-item:focus .like-svg:focus .bg-like, .tools .list-item:focus .like-svg:hover .bg-like, .tools .list-item:focus .like-svg:active .bg-like, .tools .list-item:hover .like-svg:focus .bg-like, .tools .list-item:hover .like-svg:hover .bg-like, .tools .list-item:hover .like-svg:active .bg-like, .tools .list-item:active .like-svg:focus .bg-like, .tools .list-item:active .like-svg:hover .bg-like, .tools .list-item:active .like-svg:active .bg-like {
+  fill: rgb(253, 59, 65);
+  fill-opacity: 1;
+}
 
 .footer {
   margin: 0 108px 50px;
   padding: 55px 82px;
   border-radius: 25px;
-  border: 1px solid red;
+  border: 1px solid rgba(255, 255, 255, 0);
+  background-image: radial-gradient(circle closest-corner at top left, rgb(255, 110, 48), rgba(44, 53, 61, 0.2));
 }
 .footer__container {
   display: flex;

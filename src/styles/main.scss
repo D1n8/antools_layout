@@ -122,22 +122,22 @@ main{
         background-color: rgba(40, 48, 54, 1);
         border: none;
         border-radius: 15px;
+    }
 
-        .input-box{
-            display: flex;
-            gap: 5px;
-            margin-left: 10px;
-        }
+    &__input-box{
+        display: flex;
+        gap: 5px;
+        margin-left: 10px;
 
         input{
             background: transparent;
             border: none;
             color: $text-color-main;
         }
+    }
 
-        .input__field{
-            width: 300px;
-        }
+    &__input-field{
+        width: 300px;
     }
 
     &__social-links{
@@ -183,27 +183,27 @@ main{
         row-gap: 100px;
     }
 
-    .textbox{
+    &__textbox{
         @extend %center-text;
         max-width: 455px;
         gap: 25px;
         margin-bottom: 90px;
-
-        &__title{
-            font-size: 48px;
-            font-weight: 500;
-            color: $text-color-main;
-        }
-    
-        &__descr{
-            text-align: center;
-            font-size: 18px;
-            font-weight: 500;
-            color: $text-color-minor;
-        }
     }
 
-    .list-item{
+    &__title{
+        font-size: 48px;
+        font-weight: 500;
+        color: $text-color-main;
+    }
+    
+    &__descr{
+        text-align: center;
+        font-size: 18px;
+        font-weight: 500;
+        color: $text-color-minor;
+    }
+
+    &__item{
         display: flex;
         flex-direction: column;
         gap: 30px;
@@ -213,36 +213,36 @@ main{
         border: 1px solid transparent;
         border-radius: 15px;
         transition: all 0.3s ease-in-out;
+    }
         
-        &__title{
-            margin-bottom: 3px;
-            font-size: 24px;
-            line-height: 1.5;
-            font-weight: 500;
-            color: $text-color-main;
-        }
+    &__item-title{
+        margin-bottom: 3px;
+        font-size: 24px;
+        line-height: 1.5;
+        font-weight: 500;
+        color: $text-color-main;
+    }
 
-        &__subtitle{
-            font-size: 18px;
-            line-height: 1.5;
-            color: rgba(255, 165, 55, 0.55);
-        }
-        
-        &__descr{
-            line-height: 1,875;
-            color: $text-color-minor;
-        }
+    &__item-subtitle{
+        font-size: 18px;
+        line-height: 1.5;
+        color: rgba(255, 165, 55, 0.55);
+    }
+    
+    &__item-descr{
+        line-height: 1,875;
+        color: $text-color-minor;
+    }
 
-        .top-container{
-            display: flex;
-            gap: 30px;
-        }
+    &__item-top-container{
+        display: flex;
+        gap: 30px;
+    }
 
-        .bottom-container{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
+    &__item-bottom-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .add-svg{
@@ -254,7 +254,7 @@ main{
         fill-opacity:0.38;
     }
 
-    .list-item:focus, .list-item:hover, .list-item:active{
+    .tools__item:focus, .tools__item:hover, .tools__item:active{
         background-color: rgba(40, 48, 54, 0.6);
         transform: translateY(-20px);
 

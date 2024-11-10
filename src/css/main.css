@@ -109,17 +109,17 @@ main {
   border: none;
   border-radius: 15px;
 }
-.hero__input .input-box {
+.hero__input-box {
   display: flex;
   gap: 5px;
   margin-left: 10px;
 }
-.hero__input input {
+.hero__input-box input {
   background: transparent;
   border: none;
   color: rgba(255, 255, 255, 0.9);
 }
-.hero__input .input__field {
+.hero__input-field {
   width: 300px;
 }
 .hero__social-links {
@@ -133,7 +133,7 @@ main {
   fill: rgb(255, 110, 48);
 }
 
-.tools .textbox, .tools {
+.tools__textbox, .tools {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -157,23 +157,23 @@ main {
        column-gap: 24px;
   row-gap: 100px;
 }
-.tools .textbox {
+.tools__textbox {
   max-width: 455px;
   gap: 25px;
   margin-bottom: 90px;
 }
-.tools .textbox__title {
+.tools__title {
   font-size: 48px;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.9);
 }
-.tools .textbox__descr {
+.tools__descr {
   text-align: center;
   font-size: 18px;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.55);
 }
-.tools .list-item {
+.tools__item {
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -184,27 +184,27 @@ main {
   border-radius: 15px;
   transition: all 0.3s ease-in-out;
 }
-.tools .list-item__title {
+.tools__item-title {
   margin-bottom: 3px;
   font-size: 24px;
   line-height: 1.5;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.9);
 }
-.tools .list-item__subtitle {
+.tools__item-subtitle {
   font-size: 18px;
   line-height: 1.5;
   color: rgba(255, 165, 55, 0.55);
 }
-.tools .list-item__descr {
+.tools__item-descr {
   line-height: 1, 875;
   color: rgba(255, 255, 255, 0.55);
 }
-.tools .list-item .top-container {
+.tools__item-top-container {
   display: flex;
   gap: 30px;
 }
-.tools .list-item .bottom-container {
+.tools__item-bottom-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -216,22 +216,22 @@ main {
   fill: white;
   fill-opacity: 0.38;
 }
-.tools .list-item:focus, .tools .list-item:hover, .tools .list-item:active {
+.tools .tools__item:focus, .tools .tools__item:hover, .tools .tools__item:active {
   background-color: rgba(40, 48, 54, 0.6);
   transform: translateY(-20px);
 }
-.tools .list-item:focus .bg-svg, .tools .list-item:hover .bg-svg, .tools .list-item:active .bg-svg {
+.tools .tools__item:focus .bg-svg, .tools .tools__item:hover .bg-svg, .tools .tools__item:active .bg-svg {
   fill: rgb(40, 48, 54);
 }
-.tools .list-item:focus .btn_transparent, .tools .list-item:hover .btn_transparent, .tools .list-item:active .btn_transparent {
+.tools .tools__item:focus .btn_transparent, .tools .tools__item:hover .btn_transparent, .tools .tools__item:active .btn_transparent {
   color: rgba(255, 255, 255, 0.9);
   background-color: rgb(255, 110, 48);
 }
-.tools .list-item:focus .btn_transparent:focus, .tools .list-item:focus .btn_transparent:hover, .tools .list-item:focus .btn_transparent:active, .tools .list-item:hover .btn_transparent:focus, .tools .list-item:hover .btn_transparent:hover, .tools .list-item:hover .btn_transparent:active, .tools .list-item:active .btn_transparent:focus, .tools .list-item:active .btn_transparent:hover, .tools .list-item:active .btn_transparent:active {
+.tools .tools__item:focus .btn_transparent:focus, .tools .tools__item:focus .btn_transparent:hover, .tools .tools__item:focus .btn_transparent:active, .tools .tools__item:hover .btn_transparent:focus, .tools .tools__item:hover .btn_transparent:hover, .tools .tools__item:hover .btn_transparent:active, .tools .tools__item:active .btn_transparent:focus, .tools .tools__item:active .btn_transparent:hover, .tools .tools__item:active .btn_transparent:active {
   border: 1px solid rgb(255, 110, 48);
   background: transparent;
 }
-.tools .list-item:focus .like-svg:focus .bg-like, .tools .list-item:focus .like-svg:hover .bg-like, .tools .list-item:focus .like-svg:active .bg-like, .tools .list-item:hover .like-svg:focus .bg-like, .tools .list-item:hover .like-svg:hover .bg-like, .tools .list-item:hover .like-svg:active .bg-like, .tools .list-item:active .like-svg:focus .bg-like, .tools .list-item:active .like-svg:hover .bg-like, .tools .list-item:active .like-svg:active .bg-like {
+.tools .tools__item:focus .like-svg:focus .bg-like, .tools .tools__item:focus .like-svg:hover .bg-like, .tools .tools__item:focus .like-svg:active .bg-like, .tools .tools__item:hover .like-svg:focus .bg-like, .tools .tools__item:hover .like-svg:hover .bg-like, .tools .tools__item:hover .like-svg:active .bg-like, .tools .tools__item:active .like-svg:focus .bg-like, .tools .tools__item:active .like-svg:hover .bg-like, .tools .tools__item:active .like-svg:active .bg-like {
   fill: rgb(253, 59, 65);
   fill-opacity: 1;
 }

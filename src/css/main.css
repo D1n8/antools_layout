@@ -53,22 +53,22 @@ header .nav__list {
   display: flex;
   gap: 50px;
 }
-header .nav__list .nav__item-link {
-  color: rgba(255, 255, 255, 0.55);
-}
 header .nav__list .select-svg {
   stroke: rgba(255, 255, 255, 0.9);
   stroke-opacity: 0.55;
 }
-header .nav__list .nav__item-link_select {
+header .nav__item-link {
+  color: rgba(255, 255, 255, 0.55);
+}
+header .nav__item-link_select {
   display: flex;
   gap: 5px;
   align-items: center;
 }
-header .nav__list .nav__item-link:focus, header .nav__list .nav__item-link:hover, header .nav__list .nav__item-link:active {
+header .nav__item-link:focus, header .nav__item-link:hover, header .nav__item-link:active {
   color: rgba(255, 255, 255, 0.9);
 }
-header .nav__list .nav__item-link:focus .select-svg, header .nav__list .nav__item-link:hover .select-svg, header .nav__list .nav__item-link:active .select-svg {
+header .nav__item-link:focus .select-svg, header .nav__item-link:hover .select-svg, header .nav__item-link:active .select-svg {
   stroke-opacity: 1;
 }
 

@@ -53,26 +53,29 @@ header{
     justify-content: space-between;
     margin-inline: 108px;
 
-    .nav__list{
-        display: flex;
-        gap: 50px;
+    .nav{
+        &__list{
+            display: flex;
+            gap: 50px;
 
-        .nav__item-link{
+            .select-svg{
+                stroke: $text-color-main;
+                stroke-opacity: 0.55;
+            }
+        }
+
+        &__item-link{
             color: $text-color-minor;
+
         }
 
-        .select-svg{
-            stroke: $text-color-main;
-            stroke-opacity: 0.55;
-        }
-
-        .nav__item-link_select{
+        &__item-link_select{
             display: flex;
             gap: 5px;
             align-items: center;
         }
 
-        .nav__item-link:focus, .nav__item-link:hover, .nav__item-link:active{
+        &__item-link:focus, &__item-link:hover, &__item-link:active{
             color: $text-color-main;
 
             .select-svg{
